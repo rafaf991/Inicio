@@ -1,2 +1,0 @@
-#fdsfsdfasd
-ptint 4
