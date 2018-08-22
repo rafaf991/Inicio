@@ -1,0 +1,29 @@
+
+
+
+
+grep cadena_busqueda nombrearchivo # busca la cadena en el archivo
+
+grep cadena_busqueda nombrearchivo > otro archivo # pasa la informacion que iba a ser leida
+
+mv nombre_archivo direccion  #mueve el archivo o re nombra si es en la misma direccion
+
+rm -rf nombre_archivo   #borra el archivo
+
+lectores:
+  more
+  less
+  atom
+  emacs
+  gedit
+  ...
+
+wget url #descarga el archivo del url
+
+mkdir nombre_direcotrio #crea el direcotrio
+
+chmod u+rwx nombre_archivo #permissos de archivos
+
+wc nombrearchivo # infomracion del archivo numero de lineas y palabras y nombrearchivo
+
+awk '{if($3 > 3) print $1, $2;}' nombre archivo # imprime priemra y segunda columna de la lista
