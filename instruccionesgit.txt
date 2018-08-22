@@ -1,3 +1,0 @@
-git add nombre.xx
-git commit -m "Comentario"
-git push
