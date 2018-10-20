@@ -24,9 +24,15 @@ def fft1(x):
     return X
 
 X=fft1(signal[:,1])
+N=len(X)
+freq=fft.fftfreq(len(X))
+freq2=2*np.pi*np.linspace(-N,N,N)/N
+print freq
+print freq2
 t=np.linspace(0,len(X),len(X))
 plt.clf()
 plt.plot(t,np.abs(X),label="Transformada implementacion propia")
-#plt.plot(t,fft.fft(signal[:,1]),label="Transformada implementacion np.")
+#plt.plot(t,50+np.abs(fft.fft(signal[:,1])),label="Transformada implementacion np.")
 plt.legend(loc=0)
+plt.savefig("CordobaRafael_TF.pdf")
 #plt.show()
