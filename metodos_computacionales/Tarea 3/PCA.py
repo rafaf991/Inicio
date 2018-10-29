@@ -6,7 +6,6 @@ import pandas as pd
 dat =np.genfromtxt("WDBC.dat", delimiter=",", dtype="|U5", autostrip=True)
 
 #Datos sin B o M
-print dat, dat.shape[0],dat.shape[1]
 datos=np.array(np.zeros([dat.shape[0],dat.shape[1]-2]))
 datos[:,:] = dat[:,2:]
 
@@ -46,6 +45,9 @@ for i in range(datos.shape[1]):
         cov[j][i]=a
 
 
+print "Matriz de covarianza:"
+print cov
+
 eigenvalues,eigenvectors=np.linalg.eig(cov)
 vectors=[]
 for i in eigenvectors:
@@ -58,16 +60,16 @@ for i in eigenvectors:
 for i in range(len(eigenvalues)):
     print "Dato: %s ,Eigenvalue: %2.2f Eigenvector: %s" %(i+1,eigenvalues[i],vectors[i])
     print " "
-print "Los parametros mas importantes son:"
+print "Los vecores en los que mas dependen los datos son:"
 for i in range (len(eigenvalues)):
     if (eigenvalues[i]>1):
         print "Dato: %s, Eigenvalue: %s " %(i+1,eigenvalues[i])
-print "El ID y el diagnostico no se cuentan aqui"
+print "Los parametros mas importantes segun las componentes de los vectores son: "
+print "Dato 1,Dato 2,Dato 4 y Dato 5"
+print "El ID y el diagnostico no se cuentan aqui."
 
 #Proyeccion
 vectors1=np.copy(eigenvectors)
-print eigenvalues[0],eigenvalues[1]
-
 pc1=vectors1[0]
 pc2=vectors1[1]
 vectorspc1=[]
@@ -75,7 +77,6 @@ vectorspc2=[]
 vectorsM=[]
 vectorsB=[]
 datos[:,:] = dat[:,2:]
-print datos
 for i in range(dat.shape[0]):
     if(dat[i,1]=="0"):
         a=np.dot(pc1,datos[i,:])
@@ -88,7 +89,9 @@ for i in range(dat.shape[0]):
 vectorsB=np.array(vectorsB)
 vectorsM=np.array(vectorsM)
 
-plt.scatter(vectorsB[:,0],vectorsB[:,1], label="Datos Venigno")
+plt.scatter(vectorsB[:,0],vectorsB[:,1], label="Datos Benigno")
 plt.scatter(vectorsM[:,0],vectorsM[:,1],label="Datos Maligno")
 plt.legend(loc=0)
+plt.savefig("CordobaRafael_PCA.pdf")
 plt.show()
+print "Como se evidencia en la grafica de PCA, se ve que al reducir el valor de la proyeccion sobre el primer y segundo autovector la probabilidad de tener cancer maligno es mayor, asi mismo, los datos para cancer venigno no se disperzan tanto lo que puede ser un paramtero sobre el tercer autovector. Por tanto, se cree que el metodo de PCA es util para esta medicion de datos."

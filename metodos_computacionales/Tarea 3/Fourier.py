@@ -54,7 +54,7 @@ freq1=np.copy(freq)
 transrec=np.copy(X)
 
 where2 =np.where(np.abs(X)<20)
-transrec[where2]=0
+transrec[where2]=0+0j
 plt.clf()
 plt.plot(freq,np.abs(transrec),label="Transformada sin ruido")
 plt.legend(loc=0)
@@ -62,7 +62,7 @@ plt.xlabel("Frecuencia [Hz]")
 plt.ylabel("Norma de la Transformada")
 #plt.show()
 plt.clf()
-plt.plot(t,fft.ifft(transrec))
+plt.plot(t,np.real(fft.ifft(transrec)))
 plt.savefig("CordobaRafael_filtrada.pdf")
 
 
