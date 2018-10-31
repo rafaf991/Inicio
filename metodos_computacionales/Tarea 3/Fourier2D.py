@@ -19,7 +19,7 @@ plt.xlim(-0.5,0.5)
 
 
 plt.clf()
-plt.imshow(10*np.log10(abs(fft2)),label="Transformada 2D Arboles.")
+plt.imshow(10*np.log10(abs(fftpack.fftshift(fft2))),label="Transformada 2D Arboles.")
 plt.colorbar()
 plt.savefig("CordobaRafael_FT2D.pdf")
 
@@ -30,8 +30,11 @@ filtrada=np.copy(fft2)
 where1=np.where((np.abs(filtrada)>1000000) & (np.abs(filtrada)<2000000 ))
 
 filtrada[where1]=1
+
+filtradashift=np.copy(fftpack.fftshift(filtrada))
+from matplotlib.colors import LogNorm
 plt.clf()
-plt.imshow(10*np.log10(abs(filtrada)))
+plt.imshow(abs(filtradashift),norm=LogNorm())
 plt.colorbar()
 plt.savefig("CordobaRafael_FT2D_Filtrada.pdf")
 

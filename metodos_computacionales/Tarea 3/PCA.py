@@ -79,12 +79,12 @@ vectorsB=[]
 datos[:,:] = dat[:,2:]
 for i in range(dat.shape[0]):
     if(dat[i,1]=="0"):
-        a=np.dot(pc1,datos[i,:])
-        b=np.dot(pc2,datos[i,:])
+        a=np.dot(pc1,datos[i,:])/np.linalg.norm(pc1)
+        b=np.dot(pc2,datos[i,:])/np.linalg.norm(pc2)
         vectorsB.append([a,b])
     else:
-        a=np.dot(pc1,datos[i,:])
-        b=np.dot(pc2,datos[i,:])
+        a=np.dot(pc1,datos[i,:])/np.linalg.norm(pc1)
+        b=np.dot(pc2,datos[i,:])/np.linalg.norm(pc2)
         vectorsM.append([a,b])
 vectorsB=np.array(vectorsB)
 vectorsM=np.array(vectorsM)
@@ -92,6 +92,9 @@ vectorsM=np.array(vectorsM)
 plt.scatter(vectorsB[:,0],vectorsB[:,1], label="Datos Benigno")
 plt.scatter(vectorsM[:,0],vectorsM[:,1],label="Datos Maligno")
 plt.legend(loc=0)
+plt.xlabel("PC1")
+plt.ylabel("PC2")
+plt.title("Proyeccion datos sobre PC1 y PC2")
 plt.savefig("CordobaRafael_PCA.pdf")
-plt.show()
+
 print "Como se evidencia en la grafica de PCA, se ve que al reducir el valor de la proyeccion sobre el primer y segundo autovector la probabilidad de tener cancer maligno es mayor, asi mismo, los datos para cancer venigno no se disperzan tanto lo que puede ser un paramtero sobre el tercer autovector. Por tanto, se cree que el metodo de PCA es util para esta medicion de datos."

@@ -9,6 +9,7 @@ incompletos=np.genfromtxt("incompletos.dat",delimiter =",")
 
 plt.plot(signal[:,0],signal[:,1],label= "Datos signal")
 plt.legend(loc=0)
+plt.title("Signal.dat")
 plt.xlabel("Tiempo")
 plt.ylabel("Magnitud")
 plt.savefig("CordobaRafael_signal.pdf")
@@ -33,7 +34,7 @@ def fft1(x):
 
 X=fft1(signal[:,1])
 N=len(X)
-freq=fft.fftfreq(len(X))
+freq=fft.fftfreq(len(X),d=(signal[1,0]-signal[0,0]))
 freq2=2*np.pi*np.linspace(-N,N,N)/N
 
 #freq,X=zip(*sorted(zip(freq,X)))
@@ -46,29 +47,35 @@ plt.plot(freq,np.abs(X),label="Transformada implementacion propia")
 plt.legend(loc=0)
 plt.xlabel("Frecuencia [Hz]")
 plt.ylabel("Norma de la Transformada")
+plt.title("Transformada de Fourier discreta")
 plt.savefig("CordobaRafael_TF.pdf")
 ##Frecuancias principaples
 
-where =np.where(np.abs(X)>20)
+where =np.where(np.abs(freq)<1000)
 freq1=np.copy(freq)
 transrec=np.copy(X)
 
-where2 =np.where(np.abs(X)<20)
+where2 =np.where(np.abs(freq)>1000)
 transrec[where2]=0+0j
 plt.clf()
-plt.plot(freq,np.abs(transrec),label="Transformada sin ruido")
+plt.plot(freq,np.abs(transrec),label="Transformada filtro pasa bajos corte 1000 Hz")
 plt.legend(loc=0)
 plt.xlabel("Frecuencia [Hz]")
 plt.ylabel("Norma de la Transformada")
+plt.title("Transformada Fourier filtrada")
 #plt.show()
 plt.clf()
-plt.plot(t,np.real(fft.ifft(transrec)))
+plt.plot(t,np.real(fft.ifft(transrec)),label="Signal con filtro pasa bajos corte 1000 Hz")
+plt.legend(loc=0)
+plt.xlabel("Tiempo")
+plt.ylabel("Signal")
+plt.title("Signal Filtrada")
 plt.savefig("CordobaRafael_filtrada.pdf")
 
 
 
 
-print "Las frecuencias principales son:" ,freq1[where]
+print "Las frecuencias principales son:" ,freq[where]
 
 
 print "No se puede aplicar la Transformada a los datos incompletos por que no estan igualemnte espaciados."
@@ -80,72 +87,87 @@ datcuad=cuadratica(t)
 
 
 transfcub=fft1(datcub)
-freqcub=fft.fftfreq(len(transfcub))
+freqcub=fft.fftfreq(len(transfcub),d=t[1]-t[0])
 transfcuad=fft1(datcuad)
-freqcuad=fft.fftfreq(len(transfcuad))
+freqcuad=fft.fftfreq(len(transfcuad),d=t[1]-t[0])
 
 plt.clf()
-plt.plot(311)
-
-plt.subplot(311)
-plt.plot(freqcub, np.abs(transfcub),label="Interpolacion cubica")
+plt.subplot(131)
+plt.plot(freqcub, np.abs(transfcub),label="Interp cub")
 plt.legend(loc=0)
-plt.subplot(312)
-plt.plot(freqcuad, np.abs(transfcuad),label="Interpolacion cuadratica")
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Norma ")
+plt.xlim(-1000,1000)
+plt.ylim(0,650)
+plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.2, hspace=0.2)
+plt.subplot(132)
+plt.plot(freqcuad, np.abs(transfcuad),label="Interp cuad")
 plt.legend(loc=0)
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Norma ")
+plt.xlim(-1000,1000)
 
-plt.subplot(313)
-plt.plot(freq,np.abs(X),label="Datos originales" )
-
-
+plt.ylim(0,650)
+plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.2, hspace=0.2)
+plt.subplot(133)
+plt.plot(freq,np.abs(X),label="Originales" )
 plt.legend(loc=0)
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Norma ")
+plt.xlim(-1000,1000)
+plt.subplots_adjust(wspace=0.5)
 
-
+plt.ylim(0,650)
 plt.savefig("CordobaRafael_TF_interpola.pdf")
 plt.clf()
 
 
 
 
-print "Se ve que las graficas interpoladas tienen mas frecuencias principales pues son mas grandes los valores de la magnitud de la transformada."
+print "Se ve que las graficas interpoladas tienen mas frecuencias principales pues son mas grandes los valores de la magnitud de la transformada, ademas tienen mayor magnitud las componentes con frecuencia mayor a 1000 Hz."
 
 datcuad1=np.copy(transfcuad)
-where3=np.where(np.abs(transfcuad)<20)
+where3=np.where(np.abs(freqcuad)>1000)
 datcuad1[where3]=0
 
-where4=np.where(np.abs(transfcub)<20)
+where4=np.where(np.abs(freqcub)>1000)
 datcub1=np.copy(transfcub)
 datcub1[where4]=0
 
 
 datcuad2=np.copy(transfcuad)
-where3=np.where(np.abs(transfcuad)<10)
+where3=np.where(np.abs(freqcuad)>500)
 datcuad2[where3]=0
 
-where4=np.where(np.abs(transfcub)<10)
+where4=np.where(np.abs(freqcub)>500)
 datcub2=np.copy(transfcub)
 datcub2[where4]=0
 
 
-plt.subplot(221)
-plt.plot(freqcub, np.abs(datcub1),label="Interpolacion cubica corte 1000")
+transrec500=np.copy(X)
+where2 =np.where(np.abs(freq)>500)
+transrec500[where2]=0+0j
+
+plt.subplot(211)
+plt.plot(t, np.real(fft.ifft(datcub1)),label="Cubica corte 1000 Hz")
+plt.plot(signal[:,0],np.real(fft.ifft(transrec)),label="Datos corte 1000 Hz" )
+plt.plot(t, np.real(fft.ifft(datcuad1)),label="Cuadratica corte 1000 Hz")
 plt.legend(loc=0)
-plt.xlim(-0.25,0.25)
-plt.subplot(222)
-plt.plot(freqcuad, np.abs(datcuad1),label="Interpolacion cuadratica corte 1000")
-plt.legend(loc=0)
-plt.xlim(-0.25,0.25)
-plt.subplot(223)
-plt.plot(freqcub,np.abs(datcub2),label="Datos originales corte 500" )
+plt.title("Filtro pasa bajos corte 1000 Hz")
 
 
-plt.legend(loc=0)
-plt.xlim(-0.25,0.25)
-plt.subplot(224)
-plt.plot(freqcuad,np.abs(datcuad2),label="Datos originales corte 500" )
 
 
+
+plt.subplot(212)
+plt.plot(signal[:,0],np.real(fft.ifft(transrec500)),label="Datos corte 500 Hz" )
+plt.plot(t,np.real(fft.ifft(datcub2)),label="Cubica corte 500 Hz" )
+plt.plot(t,np.real(fft.ifft(datcuad2)),label="Cuadratica corte 500 Hz" )
+
+plt.title("Filtro pasa bajos corte 500 Hz")
+
 plt.legend(loc=0)
-plt.xlim(-0.25,0.25)
+plt.subplots_adjust(wspace=0.5,hspace=0.5)
+
 plt.savefig("CordobaRafael_2Filtros.pdf")
 plt.clf()
