@@ -19,12 +19,12 @@
     ymax=50;//cm
     tmax=10;
     //Asumiendo dx=dy;
-    dx=0.1;
+    dx=1;
     dt=0.1;
     maxx=ceil(xmax/dx);
     maxy=ceil(ymax/dx);
     maxt=ceil(tmax/dt);
-    temperatura_inicial=0;
+    temperatura_inicial=1;
 
     cout<<maxx<<" "<<maxy<<maxt<<endl;
 
@@ -73,9 +73,18 @@
           TTT[i][j][0]=100;
         }
         else {
+          if (i==0||j==0){
+            T[i][j][0]=10;
+            TT[i][j][0]=temperatura_inicial;
+            TTT[i][j][0]=temperatura_inicial;
+          }
+          else{
           T[i][j][0]=temperatura_inicial;
           TT[i][j][0]=temperatura_inicial;
-          TTT[i][j][0]=temperatura_inicial;
+          TTT[i][j][0]=temperatura_inicial;}
+        }
+        if(i==0 ||i==maxx-1 ||j==0||j==maxx-1){
+          T[i][j][0]=10;
         }
 
 
@@ -87,36 +96,41 @@
 
     ofstream file;
     file.open("Eccalor.txt");
-    for (int j = 0; j < maxt; j++) {
+    for (int j = 0; j < maxt-1; j++) {
 
 
-      for (int m = 0; m < maxx; m++) {
-        for (int n = 0; n < maxy; n++) {
+      for (int m = 1; m < maxx; m++) {
+        for (int n = 1; n < maxy; n++) {
 
         //Condicion:
         if(n<liminf || n>limsup){
 
-
+        if(m<=maxx-2&&n<=maxy-2){
         T[m][n][j+1]=T[m][n][j]+nu*(dt/pow(dx,2))*(T[m+1][n][j]-T[m-1][n][j]+T[m][n+1][j]-T[m][n-1][j]-4*T[m][n][j]);
+
         TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m+1][n][j]-TT[m-1][n][j]+TT[m][n+1][j]-TT[m][n-1][j]-4*TT[m][n][j]);
-        TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[m+1][n][j]-TTT[m-1][n][j]+TTT[m][n+1][j]-TTT[m][n-1][j]-4*TTT[m][n][j]);
-
-
-
-        }
-        file<<T[m][n][j+1]<<"p";
-
-        }
-        file<<"q";
-
+      }
+      else{
+         T[m][n][j+1]=10;
+        TT[m][n][j+1]=TT[m][n][j];
 
       }
-      file<<endl;
+      TTT[m][n][(j+1)]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[(m+1)%maxx][n][j]-TTT[(m-1)%maxx][n][j]+TTT[m][(n+1)%maxx][j]-TTT[m][(n-1)%maxx][j]-4*TTT[m][n][j]);
+
+
+
+        }
+        file<<T[m][n][(j+1)]<<" "<<TT[m][n][(j+1)]<<" "<<TTT[m][n][(j+1)]<<" ";
+
+        }
+  file<<endl;
+
+      }
+
 
 
     }
     file.close();
-
 
     return 0;
   }

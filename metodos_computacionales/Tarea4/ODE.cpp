@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-
+#include <string>
 using namespace std;
 
 #define PI 3.14159265
@@ -9,9 +9,7 @@ using namespace std;
 double g[2];
 
 double c=0.2;
-double m=2;
-double angulo=45;
-
+double m=20;
 
 
 double func1(double x,double y1,double y2,int i);
@@ -39,15 +37,23 @@ int main(){
   double t[n];
   for (int i = 0; i < n; i++) t[i]=h*i;
 
-
+  double angulos[8];
+  angulos[0]=45;
+  angulos[1]=10;
+  angulos[2]=20;
+  angulos[3]=30;
+  angulos[4]=40;
+  angulos[5]=50;
+  angulos[6]=60;
+  angulos[7]=70;
+  for (int l = 0; l < 8; l++) {
+  double angulo=angulos[l];
   v[0][0]=v0*cos(angulo*PI/180);
   v[0][1]=v0*sin(angulo*PI/180);
   x[0][0]=0;
   x[0][1]=0;
-
-
   ofstream file3;
-  file3.open("graf3.txt");
+  file3.open("graf3.txt",std::fstream::app);
   double k1,k2,k3,k4,l1,l2,l3,l4;
  //runge-kutta 4
   for (int i = 0; i < n-1; i++) {
@@ -95,7 +101,7 @@ int main(){
    file3<<t[i]<<"  "<<x[i][0]<<"  "<<x[i][1]<<"  "<<v[i][0]<<"  "<<v[i][1]<<endl;
   }
   file3.close();
-
+}
 
 
 
