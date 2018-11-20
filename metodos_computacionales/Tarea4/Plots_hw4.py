@@ -9,12 +9,12 @@ datmovim= np.genfromtxt("graf3.txt",delimiter=" ")
 
 a=[45,10,20,30,40,50,60,70]
 for i in range (8):
-    dat45=datmovim[1000*i:999*(i+1),:];
+    dat=np.genfromtxt(str(a[i]),delimiter=" ")
     nombre="Trayectoria",a[i]," grados"
-    plt.scatter(dat45[:,1],dat45[:,0],label=str(nombre))
+    plt.scatter(np.linspace(0,10,len(dat)),dat[:,0],label=str(nombre))
     plt.legend(loc=0)
-    plt.show()
-
+    plt.savefig(str(nombre))
+    plt.clf()
 
 
 
