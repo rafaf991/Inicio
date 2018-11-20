@@ -10,7 +10,7 @@
     double C,p,k,nu;
     C=820;
     p=2.71;
-    k=1.62*10000//cm2  s-1;
+    k=1.62*10000;//cm2  s-1;
     nu=k/(C*p);
 
     double xmax,ymax,tmax,dx,dt,temperatura_inicial;
@@ -57,8 +57,8 @@
 
 
 
-    
-    int centrox=ceil(maxx/2); 
+
+    int centrox=ceil(maxx/2);
     int centroy=ceil(maxy/2);
     double radio=10/2;
     int radioi=ceil(radio/dx);
@@ -68,7 +68,7 @@
       for (int j = 0; j < maxy; j++) {
 
 
-	
+
         if(pow((j-centroy),2)+pow((i-centrox),2)<=pow(radioi,2)){
 	    T[i][j][0]=100;
             TT[i][j][0]=100;
@@ -104,7 +104,7 @@
         for (int n = 0; n < maxy; n++) {
 
         //Condicion metal:
-        if(pow((m-centroy),2)+pow((n-centrox),2)>pow(radioi,2)){
+  if(pow((m-centroy),2)+pow((n-centrox),2)>pow(radioi,2)){
 	//Condicion 1
 	if(m==0||n==0||m==maxx-1||n==maxy-1){
 	T[m][n][j+1]=10;
@@ -116,33 +116,43 @@
 	if(m==0||n==0||m==maxx-1||n==maxy-1){
 	if(n==0||m==maxx-1||n==maxy-1){
 	if(m==maxx-1||n==maxy-1){
-	if(n==maxy-1){
-	TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m+1][n][j]-TT[m][n][j]+TT[m][n][j]-TT[m][n-1][j]-4*TT[m][n][j]);
+	if(n==maxy-1&&m!=maxx-1){
+	TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[(m+1)%maxx-1][n][j]-TT[m][n][j]+TT[m][n][j]-TT[m][n-1][j]-4*TT[m][n][j]);
 	}
-	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m][n][j]-TT[m-1][n][j]+TT[m][n+1][j]-TT[m][n-1][j]-4*TT[m][n][j])}
+	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m][n][j]-TT[m-1][n][j]+TT[m][(n+1)%maxx-1][j]-TT[m][n-1][j]-4*TT[m][n][j]);}
 	}
-	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m+1][n][j]-TT[m][n][j]+TT[m][n+1][j]-TT[m][n][j]-4*TT[m][n][j])}
+	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[(m+1)%maxx-1][n][j]-TT[m][n][j]+TT[m][(n+1)%maxx-1][j]-TT[m][n][j]-4*TT[m][n][j]);}
 	}
-	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m+1][n][j]-TT[m][n][j]+TT[m][n+1][j]-TT[m][n-1][j]-4*TT[m][n][j]);}
-	
+	else{TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[(m+1)%maxx-1][n][j]-TT[m][n][j]+TT[m][(n+1)%maxx-1][j]-TT[m][maxx-1][j]-4*TT[m][n][j]);}
+
 	}
 	else{
-	TT[m][n][j+1]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[m+1][n][j]-TT[m-1][n][j]+TT[m][n+1][j]-TT[m][n-1][j]-4*TT[m][n][j]);
+	TT[m][n][(j+1)%maxt]=TT[m][n][j]+nu*(dt/pow(dx,2))*(TT[(m+1)%maxx][n][j]-TT[m-1][n][j]+TT[m][(n+1)%maxy][j]-TT[m][n-1][j]-4*TT[m][n][j]);
 	}
-       
-        file<<T[m][n][(j+1)]<<" "<<TT[m][n][(j+1)]<<" "<<TTT[m][n][(j+1)]<<" ";
 
-        }
+
 	//Condicion 3
-	TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[m+1][n][j]-TTT[m-1][n][j]+TTT[m][n+1][j]-TTT[m][n-1][j]-4*TTT[m][n][j])
-	
-        file<<endl;
+	if(m!=0 &&n!=0){
+	TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[(m+1)%(maxx-1)][n][j]-TTT[maxx][n][j]+TTT[m][(n+1)%(maxx-1)][j]-TTT[m][maxx][j]-4*TTT[m][n][j]);
+	}
+	else if(m!=0 && n==0){
+	TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[(m+1)%(maxx-1)][n][j]-TTT[m-1][n][j]+TTT[m][n+1][j]-TTT[m][maxx-1][j]-4*TTT[m][n][j]);
+	}
+  else if(n!=0 && m==0){
+  TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[m+1][n][j]-TTT[m-1][n][j]+TTT[m][n+1][j]-TTT[m][n-1][j]-4*TTT[m][n][j]);
 
-      }
+	}
+	else{
+	TTT[m][n][j+1]=TTT[m][n][j]+nu*(dt/pow(dx,2))*(TTT[(m+1)%(maxx-1)][n][j]-TTT[maxx-1][n][j]+TTT[m][(n+1)%(maxx-1)][j]-TTT[m][n-1][j]-4*TTT[m][n][j]);
+
+}
+
+
+        }  }
 
 
 
-    }
+    }}
     file.close();
 
     return 0;
