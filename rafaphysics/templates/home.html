@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+<div class="containerhome">
+  <div class="jumbotron animated fadeInRight">
+    <h1 class="display-4">Hola, esta es mi pagina web, este es el titulo!</h1>
+    <p class="lead">Probando la siguiente linea.</p>
+    <hr class="my-4">
+    <p>Prueba 185 la anterior no funciono.</p>
+    <a class="btn btn-primary btn-lg" href="{{url_for('info')}}" role="button">Learn more</a>
+    <p>
+      <div class='wrapper'>
+        <form id='nameForm'>
+          <div class='form-uname'>
+            <label id='nameLable' for='nameField'>Create a username:</label>
+            <input id='nameField' type='text' maxlength='25'></input>
+          </div>
+          <div class='form-sub'>
+            <button id='subButton' type='button'>Print your name!</button>
+          </div>
+        </form>
+
+        <div>
+          <p id='result'></p>
+        </div>
+      </div>
+      <script type = "text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
+
+    </p>
+  </div>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <div class="container1 animated fadeInUp">
+
+    <form action="">
+      <div class="containercard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Nota 1.</p>
+            <button onclick="window.location.href = '{{url_for('nota2')}}'" type="button" class="btn btn-primary">
+              Notas <span class="badge badge-light">4</span>
+            </button>
+            <a onclick="Hola" class="card-link"> Notas 2</a>
+          </div>
+        </div>
+      </div>
+      <div class="containercard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Nota 2.</p>
+            <button onclick="window.location.href = '{{url_for('nota1')}}'" type="button" class="btn btn-primary">
+              Notas <span class="badge badge-light">4</span>
+            </button>
+            <a href="{{url_for('nota1')}}" class="card-link"> Notas 2</a>
+          </div>
+        </div>
+      </div>
+      <div class="containercard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Nota 3.</p>
+            <button onclick="window.location.href = '{{url_for('nota3')}}'" type="button" class="btn btn-primary">
+              Notas <span class="badge badge-light">4</span>
+            </button>
+            <a href="{{url_for('nota1')}}" class="card-link"> Notas 2</a>
+          </div>
+        </div>
+      </div>
+      <div class="containercard">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Nota 4.</p>
+            <button onclick="window.location.href = '{{url_for('nota4')}}'" type="button" class="btn btn-primary">
+              Notas <span class="badge badge-light">4</span>
+            </button>
+            <a href="{{url_for('nota1')}}" class="card-link"> Notas 2</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </form>
+
+  </div>
+
+</div>
+
+
+{% endblock %}
