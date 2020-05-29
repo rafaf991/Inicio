@@ -12,4 +12,4 @@ function getUserName() {
 }
 
 var subButton = document.getElementById('subButton');
-subButton.addEventListener('click', getUserName, false); 
+subButton.addEventListener('click', getUserName, false);

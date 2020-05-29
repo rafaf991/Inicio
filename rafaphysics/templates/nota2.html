@@ -1,52 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head><title></title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="base64.js"></script>
-<script type="text/javascript">
-<!--
-// This will generate the text file content based on the form data
-function buildData(){
-    var txtData = "Name: "+$("#nameField").val()+
-            "\r\nLast Name: "+$("#lastNameField").val()+
-            "\r\nGender: "+($("#genderMale").is(":checked")?"Male":"Female");
+{% extends "layout.html" %} {% block content %}
+<div id=barra2>
 
-    return txtData;
-}
-// This will be executed when the document is ready
-$(function(){
-    // This will act when the submit BUTTON is clicked
-    $("#formToSave").submit(function(event){
-        event.preventDefault();
-        var txtData = buildData();
-        window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
-    });
+    <div class="container3 p-4 animated fadeInUp">
 
-    // This will act when the submit LINK is clicked
-    $("#submitLink").click(function(event){
-        var txtData = buildData();
-        $(this).attr('download','sugguestedName.txt')
-            .attr('href',"data:application/octet-stream;base64,"+Base64.encode(txtData));
-    });
-});
-//-->
+        <form action="">
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+            </div>
+            <div class="containercard">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    // Get the navbar
+    var navbar = document.getElementById("barra2");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky2")
+        } else {
+            navbar.classList.remove("sticky2");
+        }
+    }
 </script>
-</head>
-<body>
-<form method="post" action="" id="formToSave">
-    <dl>
-        <dt>Name:</dt>
-        <dd><input type="text" id="nameField" value="Sample" /></dd>
-        <dt>Last Name:</dt>
-        <dd><input type="text" id="lastNameField" value="Last Name" /></dd>
-        <dt>Gender:</dt>
-        <dd><input type="radio" checked="checked" name="gender" value="M" id="genderMale" />
-            Male
-            <input type="radio" checked="checked" name="gender" value="F" />
-            Female
-    </dl>
-    <p><a href="javascript://Save as TXT" id="submitLink">Save as TXT</a></p>
-    <p><button type="submit"><img src="http://www.suttonrunners.org/images/save_icon.gif" alt=""/> Save as TXT</button></p>
-</form>
-</body>
-</html>
+<div class="container-fluid" style=" margin-top: -16%;  width: 85%">
+    <div class="jumbotron animated fadeInRight">
+        <h1>Pagina 2</h1>
+        <!--
+           <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-item-1">Item 1</h4>
+            <p></p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p></p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p> </p>
+            <h4 id="list-item-4">Tex</h4>
+            <p></p>
+        </div> -->
+
+    </div>
+</div>
+
+{% endblock %}

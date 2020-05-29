@@ -1,44 +1,151 @@
-<html>
+{% extends "layout.html" %} {% block content %}
+
 <head>
-
-<script language="Javascript" >
-function download(filename, text) {
-  var pom = document.createElement('a');
-  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
-
-encodeURIComponent(text));
-  pom.setAttribute('download', filename);
-
-  pom.style.display = 'none';
-  document.body.appendChild(pom);
-
-  pom.click();
-
-  document.body.removeChild(pom);
-}
-
-function addTextHTML()
-{
-    document.addtext.name.value = document.addtext.name.value + ".html"
-}
-
-function addTextTXT()
-{
-    document.addtext.name.value = document.addtext.name.value + ".txt"
-}
-</script>
-
+    <style>
+        body {
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body>
+<div class="container">
+    <p>
+        <div class='wrapper'>
+            <form id='nameForm'>
+                <div class='form-uname'>
+                    <label id='nameLable' for='nameField'>Create a username:</label>
+                    <input id='nameField' type='text' maxlength='25'></input>
+                </div>
+                <div class='form-sub'>
+                    <button id='subButton' type='button'>Print your name!</button>
+                </div>
+            </form>
 
-<form name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
+            <div>
+                <p id='result'></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/functions.js') }}"></script>
 
-<textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea>
-<br>
-<input type="text" name="name" value="" placeholder="File Name">
-<input type="submit" onClick="addTextHTML();" value="Save As HTML">
-<input type="submit" onClick="addTexttxt();" value="Save As TXT">
+    </p>
 
-</form>
-</body>
-</html>
+    <h1>Prueba de subida archivos.</h1>
+    <p>ipsum dolor sit amet, consectetur adipiscing elit. Nullam egestas consectetur felis dapibus varius. Sed dapibus ipsum at sapien rhoncus, volutpat euismod lectus tempor. Fusce sit amet ligula a massa malesuada molestie. Praesent tristique nisl cursus
+        velit fermentum, at consectetur nibh tincidunt. Donec sit amet mi id enim tristique elementum. Proin et massa vitae augue fringilla sodales at placerat nunc. Fusce consectetur mollis diam non luctus. Maecenas porta leo metus, nec semper eros tempus
+        sed.
+    </p>
+    <p>Nunc ultrices magna arcu, ut facilisis nibh dapibus a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vel tortor dignissim, posuere urna at, tristique orci. Donec tempus massa vel viverra hendrerit. Duis in magna venenatis,
+        euismod nibh ut, finibus felis. Vestibulum nec finibus diam. Nam luctus ac nisi eu interdum. Mauris justo ante, dictum in pulvinar vitae, feugiat eu justo. Nullam non orci lacinia, pellentesque orci id, auctor tortor. Duis purus sem, mattis sed
+        lacus et, placerat laoreet orci. Curabitur massa nisi, accumsan at vulputate non, finibus non mi. Sed fringilla tristique velit, ut molestie odio iaculis sit amet. Pellentesque a orci interdum, viverra mi vitae, rutrum est.
+    </p>
+    <p>Pellentesque pulvinar ligula id tortor rhoncus congue. Ut gravida accumsan sapien, a ornare est vulputate ut. Cras sit amet elit vel tellus blandit aliquam in sit amet augue. Morbi mi purus, luctus sit amet velit in, suscipit finibus justo. Integer
+        commodo dictum elit sit amet gravida. In hac habitasse platea dictumst. Quisque mattis massa et scelerisque ultrices. Pellentesque faucibus neque ac iaculis pellentesque. Duis finibus convallis quam vitae tempor.
+    </p>
+    <p>Pellentesque pulvinar ligula id tortor rhoncus congue. Ut gravida accumsan sapien, a ornare est vulputate ut. Cras sit amet elit vel tellus blandit aliquam in sit amet augue. Morbi mi purus, luctus sit amet velit in, suscipit finibus justo. Integer
+        commodo dictum elit sit amet gravida. In hac habitasse platea dictumst. Quisque mattis massa et scelerisque ultrices. Pellentesque faucibus neque ac iaculis pellentesque. Duis finibus convallis quam vitae tempor.
+    </p>
+    <p>
+        Donec justo urna, faucibus ut erat non, pellentesque consequat libero. Maecenas id diam vitae felis dapibus dignissim. Morbi malesuada nec odio eu convallis. Praesent accumsan fermentum libero lobortis finibus. Nam vel vehicula quam, id ullamcorper dolor.
+        Nam blandit commodo arcu, eget finibus est ultricies et. In hac habitasse platea dictumst. Praesent in justo diam. Nulla facilisi. Duis purus orci, scelerisque vel tempor vitae, aliquam non dui. Morbi at odio ante. Pellentesque lacinia rutrum
+        pulvinar. Aenean vulputate, justo id semper consequat, mauris ex eleifend augue, vitae mollis ante sem in massa. Sed convallis vulputate ipsum, quis ultrices ex egestas id. Proin tempus tellus eu massa mattis porta.
+    </p>
+    <p>
+        Vivamus eu porta lectus, vel efficitur leo. Mauris ornare velit ut dui molestie varius. Suspendisse feugiat tellus tellus, sed faucibus orci accumsan eget. Suspendisse quis lorem libero. Nullam lorem arcu, iaculis vel ultrices nec, venenatis sit amet
+        est. Proin a neque imperdiet, ullamcorper quam a, hendrerit quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas malesuada pellentesque ante, at lacinia ante volutpat non. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Aliquam erat volutpat. Ut rhoncus ac purus quis dictum. Quisque ut egestas turpis, nec aliquet lectus. Pellentesque et efficitur elit, non pulvinar ligula.
+    </p>
+
+
+
+    <head>
+
+        <script language="Javascript">
+            function download(filename, text) {
+                var pom = document.createElement('a');
+                pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +
+
+                    encodeURIComponent(text));
+                pom.setAttribute('download', filename);
+
+                pom.style.display = 'none';
+                document.body.appendChild(pom);
+
+                pom.click();
+
+                document.body.removeChild(pom);
+            }
+
+            function addTextHTML() {
+                document.addtext.name.value = document.addtext.name.value + ".html"
+            }
+
+            function addTextTXT() {
+                document.addtext.name.value = document.addtext.name.value + ".txt"
+            }
+        </script>
+
+    </head>
+
+    <form name="addtext" onsubmit="download(this['name'].value, this['text'].value)">
+
+        <textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea>
+        <br>
+        <input type="text" name="name" value="" placeholder="File Name">
+        <input type="submit" onClick="addTextHTML();" value="Save As HTML">
+        <input type="submit" onClick="addTexttxt();" value="Save As TXT">
+
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="base64.js"></script>
+    <script type="text/javascript">
+        <!--
+        // This will generate the text file content based on the form data
+        function buildData() {
+            var txtData = "Name: " + $("#nameField").val() +
+                "\r\nLast Name: " + $("#lastNameField").val() +
+                "\r\nGender: " + ($("#genderMale").is(":checked") ? "Male" : "Female");
+
+            return txtData;
+        }
+        // This will be executed when the document is ready
+        $(function() {
+            // This will act when the submit BUTTON is clicked
+            $("#formToSave").submit(function(event) {
+                event.preventDefault();
+                var txtData = buildData();
+                window.location.href = "data:application/octet-stream;base64," + Base64.encode(txtData);
+            });
+
+            // This will act when the submit LINK is clicked
+            $("#submitLink").click(function(event) {
+                var txtData = buildData();
+                $(this).attr('download', 'sugguestedName.txt')
+                    .attr('href', "data:application/octet-stream;base64," + Base64.encode(txtData));
+            });
+        });
+        //-->
+    </script>
+    </head>
+
+    <body>
+        <form method="post" action="" id="formToSave">
+            <dl>
+                <dt>Name:</dt>
+                <dd><input type="text" id="nameField" value="Sample" /></dd>
+                <dt>Last Name:</dt>
+                <dd><input type="text" id="lastNameField" value="Last Name" /></dd>
+                <dt>Gender:</dt>
+                <dd><input type="radio" checked="checked" name="gender" value="M" id="genderMale" /> Male
+                    <input type="radio" checked="checked" name="gender" value="F" /> Female
+            </dl>
+            <p><a href="javascript://Save as TXT" id="submitLink">Save as TXT</a></p>
+            <p><button type="submit"><img src="http://www.suttonrunners.org/images/save_icon.gif" alt=""/> Save as TXT</button></p>
+        </form>
+
+        <form action="{{ url_for('static', filename='php/upload.php') }}" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+    </body>
+</div>
+{% endblock %}

@@ -28,6 +28,10 @@ def nota3():
 def nota4():
     return render_template("nota4.html")
 
+@app.route('/nota')
+def nota():
+    return render_template("nota.html")
+
 @app.route('/info')
 def info():
     return render_template("info.html")
