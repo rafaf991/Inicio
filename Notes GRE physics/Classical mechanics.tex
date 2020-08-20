@@ -1,0 +1,147 @@
+\section{Statics}
+Principal forces involved in free-body diagrams:
+\begin{itemize}
+    \item Normal force    $\rightarrow$ 3th of Newton betwen the contact surface
+    \item Friction $\rightarrow$ $\mu N$
+    \item Gravity   mg $\rightarrow$ General form $\frac{Gm_{earth}}{r^2}$
+    \item $\dots$
+\end{itemize}
+\section{Dynamics}
+Projectiles:
+Aceleration constant. 
+$$ma=\underbrace{mg}_{F}\implies \underbrace{\int \int \vec{a} dt}_{\vec{x}} =\int \int \vec{g} dt= \vec{x_0}+\vec{v_0} t+\frac{1}{2}\vec{g}t^2$$
+$$\boxed{x_0+v_0t-\frac{1}{2}gt^2=x(t)}$$
+By work energy theorem (acceleration constant)
+\begin{align*}
+\underbrace{\int F \cdot dx }_{\text{Work excerted due the force}}= m\int a dx=ma\Delta x =\underbrace{\frac{1}{2}mv_f^2-\frac{1}{2}mv_i^2}_{\text{Energy needed to lift the projectile}}\\
+\end{align*}
+$$\boxed{v_f^2-v_i^2 =2a\Delta x}$$
+\subsection{Circular motion}
+Uniform circular motion:
+Radial aceleration creates a {\bf centripetal force} (due to 2nd-Newton)
+$$\boxed{a_{\text{radial}}=\frac{v^2}{r}} =\frac{\omega^2}{v}\implies F=\frac{mv^2}{r}$$
+
+
+
+
+\subsection{Energy:}
+\begin{itemize}
+    \item Traslational $\rightarrow\boxed{ \frac{1}{2}mv^2}$
+    \item Rotational   $\rightarrow \boxed{\frac{1}{2}I\omega^2}$
+    \item Potential $\rightarrow\boxed{ mgh}$
+    \item Spring (Potential) $\rightarrow \boxed{\frac{1}{2}kx^2}$
+\end{itemize}
+
+In general $\vec{F}=-\Delta U$ hence, $$\boxed{-\int_\gamma \underbrace{\vec{F}\cdot d^3\vec{l}}_{\text{Path dependent\footnote  {(force perpendicuar to the motion does no work)}}} = \Delta U}$$
+\begin{example}{Potential energy of a spring in 3 dimensions}
+    $F=-k\vec{x}$ Integrating we find that the energy is:
+    $$\Delta U= -\int -k\vec{x} \cdot \underbrace{d^3\vec{x}}_{\vec{n} d^3x}=\int k \begin{bmatrix}
+        x &y&z
+    \end{bmatrix} \underbrace{\frac{1}{\sqrt{
+x^2+y^2+z^2 }}\begin{bmatrix}
+        x\\
+        y\\
+        z\\
+    \end{bmatrix}}_{\vec{n}}d^3r =\int k r dr =\frac{1}{2}k r^2=\frac{1}{2}k(x^2+y^2+z^2)$$
+\end{example}
+\begin{example}
+    Energy needed to bring a satellite to a distance r of the earth.
+
+    $$U(r)=-\int \vec{F} \cdot d^3\vec{l}=-\int \underbrace{-\frac{GM_{\text{Earth}} m_{\text{satellite}}}{r^2}}_{\text{Attractive} \mapsto \text{sign negative}}} dr=-\frac{GM_{\text{Earth}} m_{\text{satellite}}}{r}$$
+\end{example}
+
+\subsubsection{Some tips to find moments of Inertia (and not have memorize)}
+
+$$\boxed{I= \int r^2 dm}$$
+
+Parallel axis theorem: $$\boxed{I=I_{CM}+Mr^2}
+$$
+    where r is the distance from the center to the parallel axis  
+ 
+    
+{\bf The grater moment inertia the harder to rotate}
+
+
+
+
+In addition, many problems relate rolling with linear velocity {\bf rolling with out slipping} $\boxed{v=R\omega}$ 
+
+
+\subsection{Collisions}
+Remember $\boxed{\vec{p}=m\vec{v} \rightarrow \vec{F}= \dot{\vec{p}}}$ equivalent $\boxed{\vec{L}=\vec{r}\cross \vec{p}=I\vec{\omega} \rightarrow \tau = \dot{\vec{L}}=\vec{r}\cross \vec{F}}$
+
+
+Evry collison has to have either momentum (Angular or linear) or energy conservation.
+
+
+Reference frame rotating at a velocity $\vec{
+   \Omega 
+}$ is not intertial (tangential aceleration) hence, $F=ma$ remains constant if and only if we introduce the folowwing forces:
+\boxed{
+\begin{aligned}
+    F_{\text {centrifugal }} &=-m \Omega^{2} r \\
+    F_{\text {Coriolis }} &=-2 m \mathbf{\Omega} \times \mathbf{v}
+    \end{aligned}}
+
+
+    $$\boxed{\mathbf{r}_{\mathrm{CM}}=\frac{\int \mathbf{r} d m}{M}}$$
+
+
+
+    \subsection{Lagrangian and Hamiltonian mechanics:}
+    The famous and not so famous E-L eq and Hamiltonian eq are:
+    $$\boxed{\frac{d}{d t} \frac{\partial L}{\partial \dot{q}}=\frac{\partial L}{\partial q} \quad \dot{p}=-\frac{\partial H}{\partial q}, \quad \dot{q}=\frac{\partial H}{\partial p}}$$
+where $\boxed{H(p, q)=\sum_{i} p_{i} \dot{q}_{i}-L}$ and $ p_{i} \equiv \frac{\partial L}{\partial \dot{q}}: \text { momentum conjugate to } q$
+
+Some times the Lagrangian can be express in termos of a new effective potential in such a way that the kinetic energy behaves as isolated coordinates that is, the kinetic energy is of the form $\frac{1}{2}mr^2$.
+
+\subsubsection{Orbits}
+
+\begin{itemize}
+    \item E>0 hiperbolic (why?)
+    \item E<0 elliptic
+    \item E=0 parabolic
+\end{itemize}
+
+\subsubsection{Kepler law's}
+\begin{itemize}
+    \item Planets move in elliptical orbits with one focus at the Sun.
+    \item Planetary orbits sweep out equal areas in equal times.
+    \item If $T$ is the period of a planetary orbit, and $a$ is the semimajor axis of the orbit, then $T=k a^{3 / 2},$ with $k$ the same
+    constant for all planets.
+\end{itemize}
+
+
+\section{Harmonic oscilator}
+
+$$\boxed{
+   \omega=\sqrt{
+      \frac{k}{m} 
+   } 
+}$$
+
+\subsubsection{Normal modes}
+In general we have to have a system that writes the equation $$\sum_{k}\left(A_{j k} q_{k}+m_{j k} \ddot{q}_{k}\right)=0$$ using the anzats of solution we find the following system of equations $$\sum_{k}\left(A_{j k}-\omega^{2} m_{j k}\right) a_{k}=0$$
+
+Whose solutions or {\bf normal modes} can de determinde by $$\boxed{\operatorname{det}\left(A_{j k}-\omega^{2} m_{j k}\right)=0}$$
+
+Lets not forget, in presence of damping (force proportional to $bv$) we have a form $e^i(sdfsdf+fsdf) $
+
+If the system is driven with a harmonic force (sin or cosine) the force equation gives:
+$$\ddot{x}+2 \beta \dot{x}+\omega_{0}^{2} x=A \cos \omega t$$ hence, the resonant frecuencies are $$\boxed{
+    \omega_{R}=\sqrt{\omega_{0}^{2}-2 \beta^{2}}
+}$$
+
+
+
+\section{Fluid mechanics}
+
+$$\boxed{
+    \frac{v^{2}}{2}+g z+\frac{p}{\rho}=\mathrm{constant}
+    
+    \quad F_{
+       \text{
+          buoyant 
+       } 
+    }=\rho V g
+}$$

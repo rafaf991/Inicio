@@ -1,0 +1,1302 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.17)  20 AUG 2020 01:23
+entering extended mode
+**"./Notes GRE Physics.tex"
+("Notes GRE Physics.tex"
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-15>
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrar
+ticle.cls"
+Document Class: scrarticle 2020/04/19 v3.30 KOMA-Script document class (article
+)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrar
+tcl.cls"
+Document Class: scrartcl 2020/04/19 v3.30 KOMA-Script document class (article)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
+ase.sty"
+Package: scrkbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
+se.sty"
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
+ile.sty"
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+)))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
+sic.sty"
+Package: tocbasic 2020/04/19 v3.30 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box45
+)
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 135.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 221
+2.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
+ze11pt.clo"
+File: scrsize11pt.clo 2020/04/19 v3.30 KOMA-Script font size class option (11pt
+)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
+rea.sty"
+Package: typearea 2020/04/19 v3.30 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count167
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1738.
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4761.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4761.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4769.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4779.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4779.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4789.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4789.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4799.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4799.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4809.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4809.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box46
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6040.
+
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count174
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6052.
+
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count175
+Class scrartcl Info: Redefining `\numberline' on input line 6216.
+\bibindent=\dimen134
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
+"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty
+"
+Package: babel 2020/05/13 3.44 The Babel package
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
+"
+File: babel.def 2020/05/13 3.44 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+\l@babelnohyphens=\language78
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.
+def")
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count177
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg
+"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\eng
+lish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language72) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language72) on input line 108.
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem
+.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip63
+\enit@outerparindent=\dimen136
+\enit@toks=\toks18
+\enit@inbox=\box47
+\enit@count@id=\count178
+\enitdp@description=\count179
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/doublestroke\dsfo
+nt.sty"
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
+ty"
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip64
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
+ty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
+y"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen137
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen138
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count180
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count181
+\leftroot@=\count182
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count183
+\DOTSCASE@=\count184
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box48
+\strutbox@=\box49
+\big@size=\dimen139
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count185
+\c@MaxMatrixCols=\count186
+\dotsspace@=\muskip16
+\c@parentequation=\count187
+\dspbrk@lvl=\count188
+\tag@help=\toks20
+\row@=\count189
+\column@=\count190
+\maxfields@=\count191
+\andhelp@=\toks21
+\eqnshift@=\dimen140
+\alignsep@=\dimen141
+\tagshift@=\dimen142
+\tagwidth@=\dimen143
+\totwidth@=\dimen144
+\lineht@=\dimen145
+\@envbody=\toks22
+\multlinegap=\skip65
+\multlinetaggap=\skip66
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amscls\amsthm.sty
+"
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
+\thm@preskip=\skip67
+\thm@postskip=\skip68
+\thm@headsep=\skip69
+\dth@everypar=\toks29
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xpatch\xpatch.sty
+"
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.st
+y"
+Package: expl3 2020-05-15 L3 programming layer (loader) 
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
+nd-pdfmode.def"
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count192
+\l__pdf_internal_box=\box50
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
+\xparse.sty"
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
+\xparse-generic.tex"
+\l__xparse_current_arg_int=\count193
+\g__xparse_grabber_int=\count194
+\l__xparse_m_args_int=\count195
+\l__xparse_v_nesting_int=\count196
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox
+.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
+))
+Class scrartcl Info: amsthm's \deferred@thm@head patched.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.
+sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts
+.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/physics\physics.s
+ty"
+Package: physics 
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
+ex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty
+"
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd
+.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/fonts/ifsym\ifsym.sty"
+Package: ifsym 2000/04/18 I.Kloeckl
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count198
+\calc@Bcount=\count199
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count266
+\calc@Cskip=\skip72
+)
+\c@ifsymcnt=\count267
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref
+.sty"
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds
+.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
+"
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdftexcmds\pdftex
+cmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/infwarerr\infwa
+rerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvsetkeys\kvset
+keys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/kvdefinekeys\kv
+definekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pdfescape\pdfes
+cape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hycolor\hycolor.s
+ty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/letltxmacro\letlt
+xmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/auxhook\auxhook.s
+ty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kvoptions\kvoptio
+ns.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen148
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.d
+ef"
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/intcalc\intcalc
+.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/etexcmds\etexcm
+ds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count270
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count271
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen149
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bitset\bitset.s
+ty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/bigintcalc\bigi
+ntcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count272
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/atbegshi\atbegs
+hi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.
+def"
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/atveryend\atverye
+nd.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/rerunfilecheck\re
+runfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/uniquecounter\u
+niquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip73
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count278
+\float@exts=\toks30
+\float@box=\box51
+\@float@everytoks=\toks31
+\@floatcapt=\box52
+) ("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fira\FiraSans.s
+ty"
+Package: FiraSans 2019/10/10 (Bob Tennent and autoinst) Style file for Fira San
+s fonts.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifxetex.s
+ty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifluatex.
+sty"
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
+ty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
+.tex"
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
+s.tex"
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
+)
+\XKV@depth=\count279
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty
+"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontaxes\fontaxes
+.sty"
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on inpu
+t line 112.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fira\t1firasans-o
+sf.fd"
+File: T1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraSans-
+OsF.
+)
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <10.95> not availa
+ble
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 112.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 112.
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/carlisle\slashed.
+sty"
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mfnfss\oldgerm.st
+y"
+Package: oldgerm 2000/08/02 v2.1k LaTeX2e package for Old German fonts
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.st
+y"
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count280
+\mult@box=\box53
+\multicol@leftmargin=\dimen152
+\c@unbalance=\count281
+\c@collectmore=\count282
+\doublecol@number=\count283
+\multicoltolerance=\count284
+\multicolpretolerance=\count285
+\full@width=\dimen153
+\page@free=\dimen154
+\premulticols=\dimen155
+\postmulticols=\dimen156
+\multicolsep=\skip74
+\multicolbaselineskip=\skip75
+\partial@page=\box54
+\last@line=\box55
+\maxbalancingoverflow=\dimen157
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@gfirstbox=\box58
+\mult@firstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count286
+\c@columnbadness=\count287
+\c@finalcolumnbadness=\count288
+\last@try=\dimen158
+\multicolovershoot=\dimen159
+\multicolundershoot=\dimen160
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count289
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/environ\environ.s
+ty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trimspaces\trimsp
+aces.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\c@theorem=\count290
+\c@corollary=\count291
+\c@example=\count292
+\c@definition=\count293
+ ("Notes GRE Physics.aux")
+\openout1 = `"Notes GRE Physics.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+Package scrbase Info: activating english \contentsname on input line 70.
+Package scrbase Info: activating english \listfigurename on input line 70.
+Package scrbase Info: activating english \listtablename on input line 70.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count294
+\scratchdimen=\dimen161
+\scratchbox=\box99
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen162
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks35
+)
+\AtBeginShipoutBox=\box100
+Package hyperref Info: Link coloring ON on input line 70.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.
+sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/refcount\refcount
+.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/generic/gettitlestring\
+gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count300
+)
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
+ ("Notes GRE Physics.out") ("Notes GRE Physics.out")
+\@outlinefile=\write3
+\openout3 = `"Notes GRE Physics.out"'.
+
+Class scrartcl Info: loading recommended package `bookmark'.
+(scrartcl)           Using `bookmark' together with `hyperref' is recommended,
+(scrartcl)           because of handling of possible bookmark level gaps.
+(scrartcl)           You can avoid loading `bookmark' with KOMA-Script option
+(scrartcl)           `bookmarkpackage=false' before \begin{document} and
+(scrartcl)           you can avoid this message adding:
+(scrartcl)             \usepackage{bookmark}
+(scrartcl)           before \begin{document} on input line 70.
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bookmark
+.sty"
+Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bookmark\bkm-pdft
+ex.def"
+File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
+Package auxhook Info: \AddLineBeginMainAux comes a little late,
+(auxhook)             because the main .aux file is already opened on input lin
+e 168.
+\BKM@id=\count301
+))
+\c@mv@tabular=\count302
+\c@mv@boldtabular=\count303
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10.95> not availa
+ble
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
+line 73.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 73.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <20.74> not availa
+ble
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
+line 73.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 20.74pt on input line 73.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <14.4> not availab
+le
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 73.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+
+
+("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+
+ ("C:\Users\Rafael\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <14.4> not availab
+le
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
+line 79.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 79.
+ ("Notes GRE Physics.toc"
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
+line 2.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <12> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 2.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+ [1
+
+
+{C:/Users/Rafael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+\tf@toc=\write4
+\openout4 = `"Notes GRE Physics.toc"'.
+
+
+part I.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 81.
+("Classical mechanics.tex"
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <8> not available
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 17.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 17.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <6> not available
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 17.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 17.
+
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 Radial aceleration creates a {\bf
+                                       centripetal force} (due to 2nd-Newton)
+? 
+[3]
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/n' in size <9> not available
+(Font)              Font shape `T1/FiraSans-OsF/regular/n' tried instead on inp
+ut line 35.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 35.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <10.95> not avail
+able
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
+put line 36.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 36.
+
+Overfull \hbox (20.99794pt too wide) detected at line 45
+\OT1/cmr/m/n/10.95 \OML/cmm/m/it/10.95 U \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10
+.95   []  \OML/cmm/m/it/10.95 k[] \OMS/cmsy/m/n/10.95  [] \OT1/cmr/m/n/10.95 =
+ [] \OML/cmm/m/it/10.95 k [] [] d[]r \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.9
+5 krdr \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 kr[] \OT1/cmr/m/n/10.95 = []\
+OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10
+.95 + \OML/cmm/m/it/10.95 y[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 z[]\OT1/
+cmr/m/n/10.95 )
+ []
+
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <8> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
+put line 50.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 8.0pt on input line 50.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/m/it' in size <6> not available
+
+(Font)              Font shape `T1/FiraSans-OsF/regular/it' tried instead on in
+put line 50.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 6.0pt on input line 50.
+! Extra }, or forgotten $.
+l.50 ...Attractive} \mapsto \text{sign negative}}}
+                                                   dr=-\frac{GM_{\text{Earth...
+
+? }
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+[4]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 {\bf
+          The grater moment inertia the harder to rotate}
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...s relate rolling with linear velocity {\bf
+                                                   rolling with out slipping...
+
+? 
+
+Overfull \hbox (10.88487pt too wide) in paragraph at lines 77--85
+\OML/cmm/m/it/10.95 ma$ \T1/FiraSans-OsF/regular/n/10.95 re-mains con-stant if 
+and only if we in-tro-duce the folowwing forces: [] 
+ []
+
+[5]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 Whose solutions or {\bf
+                              normal modes} can de determinde by $$\boxed{\o...
+
+? 
+[6]
+Overfull \hbox (2.8112pt too wide) in paragraph at lines 128--129
+[]\T1/FiraSans-OsF/regular/n/10.95 Lets not for-get, in pres-ence of damp-ing (
+force pro-por-tional to $\OML/cmm/m/it/10.95 bv$\T1/FiraSans-OsF/regular/n/10.9
+5 ) we have a form $\OML/cmm/m/it/10.95 e[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
+.95 sdfsdf \OT1/cmr/m/n/10.95 +
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.147 }
+       $$
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.147 }
+       $$
+? 
+)
+part II.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 83.
+("Electricity and magnetism.tex"
+Overfull \hbox (41.8952pt too wide) in paragraph at lines 1--2
+\T1/FiraSans-OsF/regular/n/10.95 In the case of elec-tro-mag-netism the Maxwell
+ equa-tions are the dean of any pro-cess(Elecrtomagnetic). 
+ []
+
+[7]
+
+! Package amsmath Error: Erroneous nesting of equation structures;
+(amsmath)                trying to recover with `aligned'.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{align*}
+                 $$
+? 
+[8]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...a distance 2d locatted in the x axis. {\bf
+                                                   ¿Whats the importance of...
+
+? 
+
+Underfull \vbox (badness 1983) has occurred while \output is active []
+
+ [9]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80    \bf
+            unique solution
+? 
+[10] [11]
+! Undefined control sequence.
+l.126 whose potential is $$\boexed
+                                  {\nabla \times \mathbf{A}=\mathbf{B}}$$ an...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...thbf{A}=\mathbf{B}}$$ analogous, the {\bf
+                                                   Lorentz force} is $$\boex...
+
+? 
+! Undefined control sequence.
+l.126 ...ous, the {\bf Lorentz force} is $$\boexed
+                                                  {\mathbf{F}_{B}=q \mathbf{...
+
+? 
+[12]
+
+! Package amsmath Error: \begin{aligned} allowed only in math mode.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133     &
+           \mathbf{B} \mid \oint_{C} d l=\mu_{0} I_{\mathrm{enc}}\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.133     &
+           \mathbf{B} \mid \oint_{C} d l=\mu_{0} I_{\mathrm{enc}}\\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135     \end{aligned}
+                       
+? 
+)
+part III.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 86.
+(Formulas.tex)
+part IV.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 88.
+(Resources.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
+
+ []
+
+[13]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...-depth review of advanced topics, try {\bf
+                                                   Classical Dynamics of Par...
+
+? 
+[14]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \item Electricity and Magnetism:  {\bf
+                                            D.J. Griffiths, Introduction to ...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ...g you're missing can be found in the  {\bf
+                                                   relevant chapters of Intr...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...No overwhelming recommendation here.  {\bf
+                                                   Thermal Physics and Eleme...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...tatistical Physics by C. Kittel}, or  {\bf
+                                                   Fundamentals of Statistic...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...uantum Mechanics and Atomic Physics:  {\bf
+                                                    D.J. Griffiths, Introduc...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ..., even for atomic physics questions.  {\bf
+                                                   Shankar and Sakurai are s...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \item Special Relativity:  {\bf
+                                     Chapter 12 of Introduction to Electrody...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...o Electrodynamics by Griffiths}, and  {\bf
+                                                   Chapter 3 of Introduction...
+
+? 
+
+Overfull \hbox (2.80045pt too wide) in paragraph at lines 35--36
+[]\T1/FiraSans-OsF/regular/n/10.95 Special Rel-a-tiv-ity: \T1/FiraSans-OsF/bold
+/n/10.95 Chap-ter 12 of In-tro-duc-tion to Elec-tro-dy-nam-ics by Grif-fiths\T1
+/FiraSans-OsF/regular/n/10.95 , and \T1/FiraSans-OsF/bold/n/10.95 Chap-
+ []
+
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...hods: For advanced circuit elements,  {\bf
+                                                   The Art of Electronics by...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...reference for radiation detection is  {\bf
+                                                   Radiation Detection and M...
+
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...pter 10 covers photon detectors, and  {\bf
+                                                   Chapter 3 covers precisel...
+
+? 
+
+Overfull \hbox (6.61557pt too wide) in paragraph at lines 38--41
+[]\T1/FiraSans-OsF/regular/n/10.95 Laboratory Meth-ods: For ad-vanced cir-cuit 
+el-e-ments, \T1/FiraSans-OsF/bold/n/10.95 The Art of Elec-tron-ics by P. Horowi
+tz
+ []
+
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 ...ialized Topics: The first chapter of  {\bf
+                                                   D.J. Griffiths, Intro-
+? 
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...ary Particles, is a mandatory read}.  {\bf
+                                                   It seems that every GRE i...
+
+? 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+
+! Class scrartcl Error: undefined old font command `\bf'.
+
+See the scrartcl class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \item For condensed matter, try  {\bf
+                                           Introduction to Solid State Physi...
+
+? 
+
+Overfull \hbox (19.74252pt too wide) in paragraph at lines 66--68
+[][][]\T1/FiraSans-OsF/regular/n/10.95 www.aps.org/careers/guidance/webinars/gr
+e-strategies.cfm[][] A we-bi-nar on Physics GRE prepa-
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+ ("Notes GRE Physics.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package rerunfilecheck Info: File `"Notes GRE Physics".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 13706 strings out of 480799
+ 236056 string characters out of 2895317
+ 720724 words of memory out of 3000000
+ 29366 multiletter control sequences out of 15000+200000
+ 752110 words of font info for 97 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 49i,21n,57p,10153b,565s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Link} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{www.grephysics.net} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Lecture\040notes\040heare} has been referenced but 
+does not exist, replaced by a fixed one
+
+{C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fira/fir_iln
+36p.enc} <C:\Users\Rafael\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecbx1440.pk> <C:\Users\Rafael\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecbx1095.pk><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Rafael/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/fira/FiraSans-Italic.pfb><C:/Users/Rafael/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fira/FiraSans-Regular.pfb><C
+:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbsy10.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmbx10.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Rafael/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Rafael/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/R
+afael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pf
+b><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Rafael/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Rafael/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ra
+fael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy6.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Users/Rafael/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "Notes GRE Physics.pdf" (16 pages, 391929 bytes).
+PDF statistics:
+ 403 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+

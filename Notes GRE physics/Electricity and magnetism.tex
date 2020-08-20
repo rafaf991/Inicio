@@ -1,0 +1,149 @@
+In the case of electromagnetism the Maxwell equations are the dean of any process(Elecrtomagnetic).
+$$\boxed{\begin{aligned}
+    \nabla \cdot \mathbf{E} =\frac{\rho}{\varepsilon_{0}}  &\rightarrow  \oint \vec{E} \cdot d \vec{a}=\frac{Q_{e n c}}{\varepsilon_{0}} \\
+    \nabla \cdot \mathbf{B} =0  &\rightarrow \oint \vec{B} \cdot d \vec{a}=0 \\
+    \nabla \times \mathbf{E} =-\frac{\partial \mathbf{B}}{\partial t}  &\rightarrow  \oint \vec{E} \cdot d \vec{l}=-\int \frac{\partial \vec{B}}{\partial t} \cdot d \vec{a} \\
+    \nabla \times \mathbf{B} =\mu_{0} \mathbf{j}+\frac{1}{c^{2}} \frac{\partial \mathbf{E}}{\partial t} &\rightarrow  \oint \vec{B} \cdot \overrightarrow{d l}=\mu_{0} I_{e n c}+\mu_{0} \varepsilon_{0} \int \frac{\partial \vec{E}}{\partial t}
+    \end{aligned}}$$
+    
+\section{Statics (Electric charges)}
+In general statics means process that does not vary in time or equivalent mathematically all time derivatives vanishes i.e. $$\frac{\partial \text{Some quantity}}{\partial t} \rightarrow 0$$
+Electrostatics follows from the first two Maxwell equations $$\boxed{\Delta \cdot \vec{E}=\frac{\rho}{\varepsilon_0} \quad \Delta \cross \vec{E}=0} $$ 
+As gravitational fields electric fields excerts a force given by $$\boxed{\vec{F}_E =q \vec{E}}$$.
+Potentials on the other hand are more useful than fields because they are functions(as dummy as it sounds fields are fields).
+$$\boxed{\vec{E}=-\Delta V}$$ using the fundamental theorem, $$V(b)=-\int_{\underbrace{a}_{\text{Zero of the potential}}}^{b} \mathbf{E} \cdot d \mathbf{l}$$ Dont forget the sign!
+$$\nabla \cdot \mathbf{E} =-{\Delta} V
+\rightarrow \Delta V= -\frac{\rho}{\varepsilon_0}$$
+
+
+To find solutions we recall the Laplace and Poisson differential equations: $\Delta F=g$ (Poisson PED) and $\Delta F= 0$ (Laplace PDE) using green functions (I have some notes if you want to remember Green methods to solve PDE).
+
+$$\boxed{
+    $$V(\mathbf{r})=\frac{1}{4 \pi \epsilon_{0}} \int \frac{\rho\left(\mathbf{r}^{\prime}\right)}{\left|\mathbf{r}-\mathbf{r}^{\prime}\right|} d^{3} \mathbf{r}^{\prime}$$ 
+}$$
+
+Coulomb's law follows taking $\rho =q \delta^3(\mathbf{x})$ or by symmetr using the first Maxwell eq in the integral form (symmetry tell us the direction of the field in this case $\hat{r}$)
+
+\subsection{A comparation between mechanics and electromagnetism}
+$$\begin{align*}
+    -4 \pi G \rho =\nabla \cdot \mathbf{g}&\rightarrow \nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon}\\
+    \frac{G m_1\hat{r}}{r^2}= \mathbf{g} &\rightarrow\mathbf{E}=\frac{q_1 \hat{r}}{4\pi \varepsilon r^2}\\
+    \frac{G m_1}{r}=U_g \quad -\nabla U_g =\mathbf{g}  &\rightarrow \vec{E}=-\nabla V \quad  V=\frac{q_1 }{4\pi \varepsilon r}\\
+    \vec{F}_G = -\nabla U_g & \rightarrow \vec{F}_E =qE=-q\nabla\underbrace{ V}_{
+       \text{
+          potential energy per unit charge 
+       } 
+    }
+\end{align*}$$
+
+
+
+\subsection{What are poles? (Dipoles, octapoles, etc.)}
+In principle the dipole are a pair of charges of different sign separated at a distance 2d locatted in the x axis. {\bf ¿Whats the importance of dipoles? I dont know.} At a point $(x,0,0)$ is easy to see that $$V(x)=\frac{1}{4 \pi \epsilon_{0}}\left(\frac{q}{|x-d|}-\frac{q}{|x+d|}\right)$$ 
+
+In the same fashion of dipole, a n-pole is just a combination of symmetry of charges alternating signs. that is, a n-pole forms a n-gon where charges are located in the vertices having alternating signs between neighbors.
+\subsection{Planes}
+Planes on the other hand are the second most important example (besides cylinders) of the Gauss law. 
+$$\oint \mathbf{E}\cdot d\mathbf{A}=E2A=\frac{Q}{\varepsilon_0}=\frac{\sigma A}{\varepsilon_0}$$
+Hence, the electirc field of a plane  laying on the xy plane with $\sigma$ positive (postive charged plane) is:
+$$\boxed{\mathbf{E}=\frac{\sigma}{2 \epsilon_{0}} \hat{z}}$$
+\subsection{Line charges and cylinders}
+Similarly as above for a cylinder (gaussian surface of radius $a$) and line (charge) of length $l$, we have: $$\oint \mathbf{E} \cdot d\mathbf{A}=E(2\pi a l)=\frac{Q}{\varepsilon_0}=\frac{\lambda l}{\varepsilon_0}$$
+
+$$\boxed{\mathbf{E}=\frac{\lambda}{2\pi \varepsilon_0 a}\hat{
+   a 
+}}
+$$
+
+\subsection{Boundaries}
+At a boundary of a surface we hacethe tangent and normal electric field since tangent is a hyperplane (or a plane ) the normal electrc field is a scalar.
+
+Integrating over a path; specifically a rectangular path with long sides paralel to the boundary and the short ones normal to the boundary (I need graphs here) we apply the second Maxwell law (statics) then $\oint \mathbf{E} \cdot d\mathbf{l}=0$ and let the perpendicual lengths tend to zero:
+$$\boxed{\mathbf{E}_{\text {out }}^{\|}-\mathbf{E}_{\mathrm{in}}^{\|}=0}$$
+Now, 
+$$E_{\mathrm{out}}^{\perp}-E_{\mathrm{in}}^{\perp}=\frac{\sigma}{\epsilon_{0}}$$
+Hence, a discontinuty of the electric field is present. in conclusion $$\boxed{
+   \text{
+      Derivatives of V are continuous, except at charged surfaces  
+   } 
+}$$
+\section{Conductors}
+$V$ is constant throughout a conductor which implies the following:
+\begin{itemize}
+    \item Electric field inside a conductor is zero (derivaitve vanishes)
+    \item The net charge density inside a conductor is zero (charge can flow freely)
+    \item Any net charge on a conductor is confined to the surface (charges inside cancelout them selves but in the boundaries there is no charge to cancel)
+    \item The electric field just  outside a conductor is perpendicular to the surface ()
+\end{itemize}
+\section{The image method (I finally undestood)}
+Since Lapalce equation for the potential $V$ is a linear PDE (and by mathematical artifices) then it has a {
+   \bf unique solution 
+}  hence if we propose an anzats for $V$ and if turns out that our guess satisfy the conditions (boundaries or charges) then it must be the potential $V$; the image method propose an anzats.
+
+
+The image method follows from our colloraries above, imagine you have a grounded  (groundend means $V=0$) conducting (conducting means $V=cte$) plane and put a charge $q$ at a distance $d$, in principle ther is 
+no symmetry in this problem but from our colloraries we know that $V$ has to vanish in the plane hence,  we propose a imaginary (or virtual) charge called the image charge in such a way that the potential vanishes in the plane that is 
+
+$$V=\frac{q}{4\pi \varepsilon_0 d}+\text{
+   somthing 
+}=0 $$ then this something is a oposite charge particle with distance d on the other side(on the other side because it has to be {inaxesible
+ for the other charge
+}) of the plane.
+
+Hence, the field of a plane and a particle with charge q is equivalent to a dipole. It is important to say that $\boxed{\text{
+   There is no energy cost to moving an image charge 
+}}$ that is because the image charge is equivalent of the charges in the plane and charges on a grounded conucting plane does not uses energy when moving charges (charges obtain is energy from the grounded state).
+
+
+\section{Work and energy.}
+As we said $V$ is the potential energy per unit charge hence, the work done for a system of particles is:
+$$\boxed{W=\frac{1}{2} \underbrace{\sum_{i=1}^{n} q_{i} V\left(\mathbf{r}_{i}\right)}_{
+   \text{
+      Double counts hence devide by 2. 
+   } 
+}} \rightarrow W=\frac{1}{2} \int \rho(\mathbf{r}) V(\mathbf{r}) d^{3} \mathbf{r}$$
+Field theorist may remember that particles carry energy but also fields carry energy by itself. $$\boxed{U_{E}=\frac{\epsilon_{0}}{2} \int|\mathbf{E}|^{2} d^{3} \mathbf{r} \quad U_{B}=\frac{1}{2 \mu_{0}} \int|\mathbf{B}|^{2} d^{3} \mathbf{r}}$$
+
+\subsection{Capaciors}
+Suppose you have to conductors (it doesn have to be the same) one charged with $Q$ and the other one with $-Q$. This conductors allow electric fields between them and hence, different potentials call it $0$ and $V$ (They are conductors).
+This is a capacitor. $$\boxed{Q=CV}$$ the most important thing is that in many ways C changes with the geometry of the problem.
+
+\begin{example}
+    For two planes with $Q$ and $-Q$ the electric field outside is 0 but inside is $$E=\frac{\sigma}{2\varepsilon_0}+\frac{\sigma}{2\varepsilon_0}=\frac{\sigma}{\varepsilon_0}$$ using $V=-\int_0^d \mathbf{E}\cdot d\mathbf{l}=Ed=\frac{\sigma d}{\varepsilon_0}$
+
+    The the capacitance is $$C=\frac{Q}{V}=\frac{\sigma A}{E d}=\frac{\sigma A \varepsilon_0}{\sigma d}=\boxed{\frac{\varepsilon_0 A}{d}=C}$$
+
+    The energy is therfore, $$U_C=\frac{\epsilon_{0}}{2} \int|\mathbf{E}|^{2} d^{3} \mathbf{r}=\frac{\epsilon_{0}}{2} \qty(\frac{Q^2}{\varepsilon^2_0 A^2})\int d^{3} \mathbf{r}=\boxed{\frac{1}{2}\frac{Q^2}{C}=\frac{1}{2}CV^2=U_C}$$
+\end{example}
+
+\section{Statics (Magnetiostatics)}
+In the same fashion as electrostatics  we use the Maxwell equation with vanishsing time derivative that is :
+
+$$\boxed{\begin{array}{c}
+    \nabla \cdot \mathbf{B}=0  \rightarrow  \oint_{S} \mathbf{B} \cdot d \mathbf{S}=0 \\ \\
+    \nabla \times \mathbf{B}=\mu_{0} \mathbf{J} \rightarrow \underbrace{\oint_{C} \mathbf{B} \cdot d \mathbf{l}=\mu_{0} I_{\mathrm{enc}}}_{\text {Ampère's law}}
+    \end{array}}$$
+whose potential is $$\boexed{\nabla \times \mathbf{A}=\mathbf{B}}$$ analogous, the {\bf Lorentz force} is $$\boexed{\mathbf{F}_{B}=q \mathbf{v} \times \mathbf{B}}$$
+and for a wire $$\boxed{d \mathbf{F}_{B}=I d \mathbf{l} \times \mathbf{B}}$$
+
+Some useful right-hand results $$\boxed{\hat{\mathbf{z}} \times \hat{\mathbf{r}}=\hat{\boldsymbol{\phi}} \quad \hat{\boldsymbol{\theta}} \times \hat{\boldsymbol{\phi}}=\hat{\mathbf{r}}}$$ are the right hand in spherical and cylindrical coordiantes
+\subsection{Ampère's law and Biot-Savart law}
+Ampére law is the (functional) analogous of Gauss law in charges. We invoke the use of symmetry: 
+\begin{aligned}
+    &\mathbf{B} \mid \oint_{C} d l=\mu_{0} I_{\mathrm{enc}}\\
+    &|\mathbf{B}|=\frac{\mu_{0} I_{\mathrm{enc}}}{L}
+    \end{aligned}
+    \begin{example}
+        For a wirwe with current I, $$\boxed{|\mathbf{B}|(2 \pi r)=\mu_{0} I \Longrightarrow \mathbf{B}=\frac{\mu_{0} I}{2 \pi r} \hat{\boldsymbol{\phi}}}$$
+    \end{example}
+    \begin{example}
+        For selenoid, the left hand side (LHS) is $BL$(contributions only inside the sleneoid) and hence $$\boxed{BL=\mu_0InL}$$
+    \end{example}
+    \begin{example}
+        For a toroid, we use a circular loop passing the wires inside, hence $$\boxed{B=\frac{\mu_{0} N I}{2 \pi r} \quad(\text { toroid })}$$
+    \end{example}
+    Many times we do not have symmetry hence, we use Biot -Savart (solutions of the Maxwell equation)
+    $$\boxed{\mathbf{B}(\mathbf{r})=\frac{\mu_{0} I}{4 \pi} \int \frac{d \mathbf{l} \times \hat{\mathbf{r}^{\prime}}}{r^{\prime 2}}}$$
+\subsection{Boundary conditions}
+\subsection{Cyclotron motion}
+\section{Dynamics}

@@ -1,0 +1,38 @@
+\babel@toc {english}{}
+\contentsline {part}{\numberline {I}Classical mechanics}{3}{part.1}%
+\contentsline {section}{\numberline {1}Statics}{3}{section.1}%
+\contentsline {section}{\numberline {2}Dynamics}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Circular motion}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Energy:}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Some tips to find moments of Inertia (and not have memorize)}{5}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Collisions}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Lagrangian and Hamiltonian mechanics:}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Orbits}{6}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Kepler law's}{6}{subsubsection.2.4.2}%
+\contentsline {section}{\numberline {3}Harmonic oscilator}{6}{section.3}%
+\contentsline {subsubsection}{\numberline {3.0.1}Normal modes}{6}{subsubsection.3.0.1}%
+\contentsline {section}{\numberline {4}Fluid mechanics}{7}{section.4}%
+\contentsline {part}{\numberline {II}Electricity and magnetism}{7}{part.2}%
+\contentsline {section}{\numberline {5}Statics (Electric charges)}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}A comparation between mechanics and electromagnetism}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}What are poles? (Dipoles, octapoles, etc.)}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Planes}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Line charges and cylinders}{10}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Boundaries}{10}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Conductors}{10}{section.6}%
+\contentsline {section}{\numberline {7}The image method (I finally undestood)}{11}{section.7}%
+\contentsline {section}{\numberline {8}Work and energy.}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Capaciors}{12}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Statics (Magnetiostatics)}{12}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Ampère's law and Biot-Savart law}{13}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Boundary conditions}{14}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Cyclotron motion}{14}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Dynamics}{14}{section.10}%
+\contentsline {part}{\numberline {III}Appendix of formulas worth to remember}{14}{part.3}%
+\contentsline {section}{\numberline {11}Must know formulas}{14}{section.11}%
+\contentsline {section}{\numberline {12}Interesting but not mandatory}{14}{section.12}%
+\contentsline {section}{\numberline {13}Specialized formulas}{14}{section.13}%
+\contentsline {section}{\numberline {14}You only use once in 10000 years formulas}{14}{section.14}%
+\contentsline {part}{\numberline {IV}Resources recomended by "Conquering the GRE..."}{14}{part.4}%
+\contentsline {section}{\numberline {15}Recomendations of "Conquering..."}{14}{section.15}%
+\contentsline {section}{\numberline {16}My special recomendations (Rafael)}{16}{section.16}%

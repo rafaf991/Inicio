@@ -1,0 +1,90 @@
+% LaTeX Notetaking Template for the 2019 Pan-Canadian Self-Organizing Conference on Machine Learning (PC-SOCMLx)
+% Template by David Madras, inspired by Meltem Atay's template for the 2018 SOCML
+
+\documentclass[twoside]{scrarticle}
+%Descomentar para verla en forma de libro. 
+%\documentclass[twoside]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{dsfont}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{lipsum}  
+\usepackage[geometry]{ifsym}
+\usepackage{hyperref}
+\usepackage{float}  
+
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+\usepackage[T1]{fontenc}
+%Descomentar esta linea para comentar la anterior para que slagan los diagramas de feynman compilar con lualatex
+%\usepackage{luacode}
+%\usepackage[T1]{fontspec}
+\usepackage{slashed}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\usepackage{oldgerm}
+\usepackage{multicol}
+\usepackage{xparse}
+\usepackage{environ}
+
+% roman numbering
+\renewcommand{\thepart}{\Roman{part}}
+% remove dot after number
+\renewcommand{\partformat}{\partname~\thepart}
+% font for "Part X"
+\setkomafont{partnumber}{\normalsize\rmfamily}
+% font for part title
+\setkomafont{part}{\Large\rmfamily\color{red}\MakeUppercase}
+
+\topmargin -0.2in
+\oddsidemargin 0.in
+\evensidemargin 0.in
+\textheight 8.2in
+\textwidth 6.2in
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{example}{Example}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{note}[theorem]{Note}
+\newtheorem{definition}{Definition}[section]
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\setlength{\baselineskip}{3.6ex}
+\setlength{\unitlength}{.7in}
+\parskip 2.ex
+
+\renewcommand{\labelitemi}{$\blacksquare$} 
+\title{A brief summary for the GRE-Physics}
+\author{Rafael Córdoba L.\\
+(And any one whom want to contribute to this text) }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+This notes will be a friendly remember of physics concepts and formulas ranging from classical mechanics to atomic physics (and beyond if I can).
+
+\begin{itemize}[leftmargin=*,noitemsep]
+  \item[] \textbf{Part I of this lecture notes are strongly based in: } Conquering the Physics GRE, Classical mechanics of particles and systems MArion and The Feynman Lectures on Physics Vol I (\hyperlink{Lecture notes heare}{https://www.feynmanlectures.caltech.edu/})
+\end{itemize}
+\tableofcontents
+
+\part{Classical mechanics}
+\input{Classical mechanics}
+\part{Electricity and magnetism}
+\input{Electricity and magnetism}
+
+\part{Appendix of formulas worth to remember}
+\input{Formulas}
+\part{Resources recomended by "Conquering the GRE..."}
+\input{Resources}
+\end{document}
